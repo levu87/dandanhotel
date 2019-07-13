@@ -1,0 +1,86 @@
+header
+    box-shadow: 0 5px gray 5px
+    nav 
+        display: flex
+        align-items: center
+        padding: 5px
+        .logo-home
+            img
+                width: 85px
+        .main-menu
+            list-style: none
+            li
+                display: inline-block
+                margin-right: 10px
+                a 
+                    position: relative
+                    color: #000000
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: 400
+                &:hover
+                    color: #0e397f
+                    border-bottom: 1px solid #0e397f
+        .toggle-menu
+            display: none
+        .searchbox
+            display: flex
+            width: 178px 
+            height: 35px
+            border: 1px solid #e4e4e4
+            input[type="text"]
+                border: none
+                width: 150px
+                padding: 0.5rem 1rem
+            button
+                background: none
+                border: none
+                em
+                    color: #e4e4e4
+        .language
+            margin: 20px
+            width: 80px 
+            height: 35px
+            display: flex
+            border: 1px solid #e4e4e4
+            justify-content: space-around
+            align-items: center
+        .sidebar-menu
+            top: 70px
+            width: 300px
+            right: -300px
+            position: fixed
+            transition: all .5s ease-in-out
+            height: calc(100vh)
+            background: #222222
+            z-index: 999
+            display: flex
+            flex-direction: column-reverse
+            padding-bottom: 355px
+            &.active
+                right: 0
+                .main-menu
+                    padding: 0
+                    text-align: center
+                    li 
+                        display: block
+                        border-bottom: 1px solid #ffff
+                        padding: .5rem 0
+                        a 
+                            color: #ffff
+@media (max-width: 1200px)
+    header
+        nav 
+            .main-menu
+                display: none
+            .toggle-menu
+                margin-left: auto
+                display: block
+                font-size: 30px
+                color: #000000
+            .language
+                margin-left: auto
+            .sidebar-menu.active
+                .main-menu
+                    display: block
+
