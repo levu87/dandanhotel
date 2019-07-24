@@ -1,4 +1,4 @@
-header
+header.sticky
     .container
         nav
             a.logo-home(href="")
@@ -21,15 +21,17 @@ header
                 li
                     a(href="#") contact
             .searchbox
-                input(type="text" placeholder="Search...")
+                input(type="text" placeholder="search...")
                 button
-                    em.fas.fa-search
+                    em.fas.fa-search.mobileicon
+                #button2
+                    em.fas.fa-search.mobileicon
             .language
                 a(href="")
                     img(src="./img/en.png", alt="")
                 a(href="")
                     img(src="./img/vi.png", alt="")
-            .toggle-menu
-                em.fas.fa-bars
+            .toggle-button
+                .button
             .sidebar-menu
 

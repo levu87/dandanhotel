@@ -40,6 +40,7 @@
 		"gulp-sourcemaps": "2.6.4",
 		"gulp-terser": "1.1.7",
 		"gulp-uglify": "3.0.2",
-		"react-owl-carousel2": "^0.3.0"
+		"react-owl-carousel2": "^0.3.0",
+		"waypoints": "^4.0.1"
 	}
 }
