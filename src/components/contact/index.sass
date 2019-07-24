@@ -1,0 +1,86 @@
+.contact
+    padding: 0px 0
+    .head
+        background: #0e397f
+        .contact-nav
+            display: flex
+            justify-content: space-between
+            padding: 15px 0
+            align-items: center
+            span 
+                color: #ffff 
+                font-size: 20px
+                font-weight: 700
+            .breadcumb
+                list-style: none
+                li
+                    display: inline-block
+                    a 
+                        color: #ffff 
+                li:nth-child(2)
+                    &:before
+                        content: "/"
+                        color: #fff
+                        margin: 5px
+    .dandanmaps
+        .maps
+            width: 100%
+            height: 500px
+            iframe
+                width: 100%
+        .contact-detail
+            margin-bottom: 20px
+            .img
+                img
+                    width: 100%    
+            .content
+                .info
+                    em
+                        color: #0e397f
+                        span
+                            margin-left: 10px
+                            color: #0e397f
+                            margin-bottom: 20px
+                            position: relative
+                            font-style: normal
+                            font-size: 18px
+                            font-weight: 600
+                        &:after
+                            width: 100px
+                            height: 1px 
+                            background: #e4e4e4
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 12px
+                            right: 0
+                        @media (max-width: 1200px)
+                            &:after
+                                display: none
+                    p 
+                        font-size: 16px
+                        color: #0e397f
+                        span 
+                            color: #0e397f
+                    h4
+                        font-style: normal
+                        padding: 20px 0 0 0
+                        color: #0e397f
+                    .ccc
+                        font: 16px
+                        color: #0e397f
+                        font-style: normal
+                        font-weight: 700
+                .headquarter
+                    h4 
+                        font-weight: 700
+                        font-size: 16px
+                        color: #444444
+                        margin: 20px 0
+                    p
+                        color: #444444
+                .hanoioffice,.danangoffice
+                    h4 
+                        margin-top: 20px
+                    p
+                        color: #444444

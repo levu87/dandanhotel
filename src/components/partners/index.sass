@@ -1,0 +1,78 @@
+.partners
+    position: relative
+    .partners-banner
+        position: relative
+        width: 100%
+        height: 290px
+        background-image: url("../img/partners.jpg")
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        .partners-title
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 140px
+            span 
+                font-size: 36px
+                font-weight: 700
+                color: #ffff
+                text-transform: uppercase
+    .partners-content
+        position: relative
+        margin-top: 2rem 
+        em 
+            font-size: 20px
+            color: #0e397f
+            margin-right: 10px
+        span 
+            font-size: 18px
+            font-weight: 600
+            text-transform: capitalize
+            color: #0e397f
+            position: relative
+        &:after
+            content: ""
+            display: block
+            justify-content: flex-end
+            position: absolute
+            top: 15px
+            width: 87%
+            right: 0
+            height: 1px
+            background: #e4e4e4
+        p 
+            font-size: 16px
+            padding-top: 20px 
+            color: #444444
+        @media (max-width: 1025px)
+            &:after
+                width: 80%
+        @media (max-width: 576px)
+            &:after 
+                width: 65%
+        @media (max-width: 350px)
+            &:after
+                width: 60%
+    .list-partners
+        margin-bottom: 2rem
+        .row
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: center
+            .item
+                margin-top: 20px
+                width: 25%
+                padding: 0
+                display: flex
+                align-items: center
+                justify-content: flex-start
+            @media (max-width: 768px)
+                .item
+                    -webkit-box-flex: 0;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    display: flex
+                    justify-content: center
+                
